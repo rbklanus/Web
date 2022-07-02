@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Keyla Lanuza</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">Proyecto</a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Bienvenida</a></li>
+              <li><a href="#about">Introducción</a></li>              
+              <li><a href="#portfolio">Portafolio</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>Hola! Te invito a que conozcas mi portafolio de trabajo</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Foto anterior</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Siguiente foto</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide.jpg",
+                              title : "¡Bienvenidos!"
+                            },
+                            {
+                              bigImage :"images/slide2.jpg",
+                              title : "Alumbrado Público"
+                              
+                            },
+                            {
+                              bigImage :"images/slide3.jpg",
+                              title : "Colonia Roma Sur y Norte"
+                             
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>Keyla Yuziel <span>Lanuza Salas</span></h2>
+        <p>Hola, este es mi portafolio de trabajo. A continuación te presento los objetivos de mi trabajo: </p>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/portafolio2.png)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h4>Objetivo General</h4>
+                  <p>Dar mantenimiento al equipamiento de la infraestructura de alumbrado público realizado en la colonia Roma sur y norte, las luminarias brindan visibilidad nocturna para la comunidad y público en general. Identificar y reemplazar las luminarias que ya no estén funcionando; lograr que todos los espacios públicos cuenten con iluminación.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>Objetivos Especificos</h4>
+                  <p><ul><li>Solicitar a la Alcaldía Cuauhtémoc su apoyo para iniciar el proyecto de mantenimiento al servicio de alumbrado público.</li>
+<li>Integrar una Mesa Directiva en la colonia para plantear y concretar la estrategia de trabajo.</li>
+<li>Registrar calle por calle de la colonia las luminarias en mal estado o fundidas, generando un reporte de luminarias en servicio eficiente. </li>
+<li>Dar seguridad y confianza a la comunidad, al transitar por las calles. </li>
+<li>Tener un servicio de alumbrado público sustentable ecológicamente amigable, mediante luminarias de celdas solares que permitan economizar y disminuir las emisiones de bióxido de carbono.</li>
+</ul></p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>Meta</h4>
+                  <p>Trabajar en conjunto con la alcaldía Cuauhtémoc para lograr tener un servicio de alumbrado público de calidad que garantice la seguridad de los colonos de la Roma sur y norte.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+	
+	
+	    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="light">
+      <header class="title">
+        <h2>Portfolio</h2>
+        <p>Aquí se encuentran mis trabajos</p>
+      </header>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+            var portfolio = [
+                    {
+                      category : "branding",
+                      image : "images/p-1.png",
+                      title : "Introdu <span>cción</span>",
+                      link : "#none",
+                      text : "Mi proyecto se enfoca en la problemática del alumbrado público, es una propuesta que busca obtener un servicio de calidad de primera clase para nuestra colonia Roma Sur y Norte"
+                    },
+                    {
+                      category : "graphic",
+                      image : "images/p-2.png",
+                      title : "Diagrama <span>Gantt</span>",
+                      link : "https://www.dropbox.com/scl/fi/p6k0eu7ozfq6inm57ruc6/LanuzaSalas_KeylaYuziel_M23S3_Fase5.xlsx?dl=0&rlkey=bswypc15tmrco7kovh647607n",
+                      text : "Da click para verlo"
+                    },
+                    {
+                      category : "graphic",
+                      image : "images/img.jpg",
+                      title : "Fase <span>Tres</span>",
+                      link : "https://docs.google.com/document/d/1VNs78wev5jdVeAsc0wO8VA1MyRCTIwPp/edit?usp=sharing&ouid=106067555984372659224&rtpof=true&sd=true",
+                      text : "Da click para verlo"
+                    },
+                    {
+                      category : "video",
+                      image : "images/roma.jpg",
+                      title : " ",
+                      link : "https://www.youtube.com/watch?v=p4IbkjIW_Wo",
+                      text : "Da click para verlo."
+                    }
+                ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>             
+
+   </div><!-- /.container-fluid -->
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
